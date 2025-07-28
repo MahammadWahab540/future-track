@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
@@ -6,7 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Badge } from '@/components/ui/badge';
-import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem } from '@/components/ui/command';
+import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from '@/components/ui/command';
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
 import { Check, ChevronsUpDown, Target, Code, BarChart, Globe } from 'lucide-react';
 import { toast } from '@/hooks/use-toast';
@@ -135,30 +136,32 @@ const SelectPathPage = () => {
                 <PopoverContent className="w-full p-0">
                   <Command>
                     <CommandInput placeholder="Search career goals..." />
-                    <CommandEmpty>No career goal found.</CommandEmpty>
-                    <CommandGroup>
-                      {careerGoals && careerGoals.length > 0 ? careerGoals.map((goal) => (
-                        <CommandItem
-                          key={goal.id}
-                          onSelect={() => {
-                            setSelectedCareerGoal(goal.id);
-                            setIsCareerGoalOpen(false);
-                          }}
-                        >
-                          <Check
-                            className={`mr-2 h-4 w-4 ${
-                              selectedCareerGoal === goal.id ? "opacity-100" : "opacity-0"
-                            }`}
-                          />
-                          <div>
-                            <div className="font-medium">{goal.title}</div>
-                            <div className="text-sm text-muted-foreground">{goal.description}</div>
-                          </div>
-                        </CommandItem>
-                      )) : (
-                        <CommandItem disabled>Loading career goals...</CommandItem>
-                      )}
-                    </CommandGroup>
+                    <CommandList>
+                      <CommandEmpty>No career goal found.</CommandEmpty>
+                      <CommandGroup>
+                        {careerGoals && careerGoals.length > 0 ? careerGoals.map((goal) => (
+                          <CommandItem
+                            key={goal.id}
+                            onSelect={() => {
+                              setSelectedCareerGoal(goal.id);
+                              setIsCareerGoalOpen(false);
+                            }}
+                          >
+                            <Check
+                              className={`mr-2 h-4 w-4 ${
+                                selectedCareerGoal === goal.id ? "opacity-100" : "opacity-0"
+                              }`}
+                            />
+                            <div>
+                              <div className="font-medium">{goal.title}</div>
+                              <div className="text-sm text-muted-foreground">{goal.description}</div>
+                            </div>
+                          </CommandItem>
+                        )) : (
+                          <CommandItem disabled>Loading career goals...</CommandItem>
+                        )}
+                      </CommandGroup>
+                    </CommandList>
                   </Command>
                 </PopoverContent>
               </Popover>
