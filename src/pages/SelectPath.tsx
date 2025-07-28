@@ -128,22 +128,23 @@ const SelectPathPage = () => {
                     className="w-full justify-between"
                   >
                     {selectedCareerGoal
-                      ? careerGoals.find(goal => goal.id === selectedCareerGoal)?.title
+                      ? careerGoals?.find(goal => goal.id === selectedCareerGoal)?.title
                       : "Select career goal..."}
                     <ChevronsUpDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
                   </Button>
                 </PopoverTrigger>
                 <PopoverContent className="w-full p-0">
-                  <Command>
+                  <Command value={selectedCareerGoal} onValueChange={setSelectedCareerGoal}>
                     <CommandInput placeholder="Search career goals..." />
                     <CommandList>
                       <CommandEmpty>No career goal found.</CommandEmpty>
                       <CommandGroup>
-                        {careerGoals && careerGoals.length > 0 ? careerGoals.map((goal) => (
+                        {(careerGoals && careerGoals.length > 0) ? careerGoals.map((goal) => (
                           <CommandItem
                             key={goal.id}
-                            onSelect={() => {
-                              setSelectedCareerGoal(goal.id);
+                            value={goal.id}
+                            onSelect={(value) => {
+                              setSelectedCareerGoal(value);
                               setIsCareerGoalOpen(false);
                             }}
                           >
@@ -158,7 +159,7 @@ const SelectPathPage = () => {
                             </div>
                           </CommandItem>
                         )) : (
-                          <CommandItem disabled>Loading career goals...</CommandItem>
+                          <CommandItem disabled value="loading">Loading career goals...</CommandItem>
                         )}
                       </CommandGroup>
                     </CommandList>

@@ -121,7 +121,7 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   const [selectedSkills, setSelectedSkills] = useState<Skill[]>(skillsData as Skill[]);
   const [roadmaps] = useState<Record<string, Roadmap>>(roadmapsData as Record<string, Roadmap>);
   const [projects, setProjects] = useState<Project[]>(projectsData as Project[]);
-  const [careerGoals] = useState<CareerGoal[]>(careerGoalsData as CareerGoal[]);
+  const [careerGoals] = useState<CareerGoal[]>(careerGoalsData ? careerGoalsData as CareerGoal[] : []);
   const [isLoading, setIsLoading] = useState(false);
 
   const updateProfile = (updates: Partial<Profile>) => {
