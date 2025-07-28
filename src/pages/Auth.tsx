@@ -284,6 +284,34 @@ const AuthPage = () => {
               </svg>
               {isLoading ? 'Connecting...' : 'Continue with Google'}
             </Button>
+            
+            <div className="relative my-6">
+              <div className="absolute inset-0 flex items-center">
+                <span className="w-full border-t" />
+              </div>
+              <div className="relative flex justify-center text-xs uppercase">
+                <span className="bg-background px-2 text-muted-foreground">Quick Access</span>
+              </div>
+            </div>
+            
+            <div className="grid grid-cols-2 gap-3">
+              <Button
+                variant="secondary"
+                onClick={() => navigate('/owner/dashboard')}
+                className="flex flex-col h-auto py-3 px-2"
+              >
+                <User className="h-5 w-5 mb-1" />
+                <span className="text-xs">Owner Portal</span>
+              </Button>
+              <Button
+                variant="secondary"
+                onClick={() => navigate('/dashboard')}
+                className="flex flex-col h-auto py-3 px-2"
+              >
+                <BookOpen className="h-5 w-5 mb-1" />
+                <span className="text-xs">Student Portal</span>
+              </Button>
+            </div>
           </CardContent>
         </Card>
       </motion.div>
