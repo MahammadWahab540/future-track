@@ -12,6 +12,14 @@ import RoadmapPage from "./pages/Roadmap";
 import LessonPage from "./pages/Lesson";
 import ProfilePage from "./pages/Profile";
 import NotFound from "./pages/NotFound";
+import { OwnerGuard } from "./components/OwnerGuard";
+import { OwnerLayout } from "./components/OwnerLayout";
+import { OwnerDashboard } from "./pages/owner/OwnerDashboard";
+import { OwnerTenants } from "./pages/owner/OwnerTenants";
+import { OwnerSkills } from "./pages/owner/OwnerSkills";
+import { OwnerFeatureFlags } from "./pages/owner/OwnerFeatureFlags";
+import { OwnerAnalytics } from "./pages/owner/OwnerAnalytics";
+import { OwnerSupport } from "./pages/owner/OwnerSupport";
 
 const queryClient = new QueryClient();
 
@@ -86,6 +94,26 @@ const AppRoutes = () => {
             </ProtectedRoute>
           } 
         />
+        
+        {/* Owner Routes */}
+        <Route path="/owner/*" element={
+          <ProtectedRoute>
+            <OwnerGuard>
+              <OwnerLayout>
+                <Routes>
+                  <Route path="dashboard" element={<OwnerDashboard />} />
+                  <Route path="tenants" element={<OwnerTenants />} />
+                  <Route path="skills" element={<OwnerSkills />} />
+                  <Route path="feature-flags" element={<OwnerFeatureFlags />} />
+                  <Route path="analytics" element={<OwnerAnalytics />} />
+                  <Route path="support" element={<OwnerSupport />} />
+                  <Route path="" element={<Navigate to="/owner/dashboard" replace />} />
+                </Routes>
+              </OwnerLayout>
+            </OwnerGuard>
+          </ProtectedRoute>
+        } />
+        
         <Route path="/" element={<Navigate to="/dashboard" replace />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
