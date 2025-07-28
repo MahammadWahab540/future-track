@@ -18,12 +18,29 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'inter': ['Inter', 'sans-serif'],
+				'poppins': ['Poppins', 'sans-serif'],
+				'outfit': ['Outfit', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				
+				'brand-primary': 'hsl(var(--brand-primary))',
+				'brand-secondary': 'hsl(var(--brand-secondary))',
+				'brand-accent': 'hsl(var(--brand-accent))',
+				'page-gradient-start': 'hsl(var(--page-gradient-start))',
+				'page-gradient-end': 'hsl(var(--page-gradient-end))',
+				'skill-card-bg': 'hsl(var(--skill-card-bg))',
+				'skill-card-border': 'hsl(var(--skill-card-border))',
+				'skill-card-hover': 'hsl(var(--skill-card-hover))',
+				'success': 'hsl(var(--success))',
+				'warning': 'hsl(var(--warning))',
+				'pending': 'hsl(var(--pending))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'

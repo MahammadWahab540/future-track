@@ -1,0 +1,64 @@
+{
+  "sql-basics": [
+    {
+      "id": "q1",
+      "question": "Which SQL statement is used to retrieve data from a database?",
+      "options": ["SELECT", "GET", "RETRIEVE", "FETCH"],
+      "correct": 0,
+      "difficulty": "easy"
+    },
+    {
+      "id": "q2", 
+      "question": "What does SQL stand for?",
+      "options": ["Standard Query Language", "Structured Query Language", "Simple Query Language", "System Query Language"],
+      "correct": 1,
+      "difficulty": "easy"
+    },
+    {
+      "id": "q3",
+      "question": "Which clause is used to filter records in SQL?",
+      "options": ["FILTER", "WHERE", "SELECT", "HAVING"],
+      "correct": 1,
+      "difficulty": "medium"
+    },
+    {
+      "id": "q4",
+      "question": "What is the correct syntax for creating a table?",
+      "options": ["CREATE TABLE table_name", "MAKE TABLE table_name", "NEW TABLE table_name", "BUILD TABLE table_name"],
+      "correct": 0,
+      "difficulty": "medium"
+    },
+    {
+      "id": "q5",
+      "question": "Which SQL function is used to count the number of rows?",
+      "options": ["NUMBER()", "COUNT()", "ROWS()", "TOTAL()"],
+      "correct": 1,
+      "difficulty": "easy"
+    }
+  ],
+  "filtering-sorting": [
+    {
+      "id": "q6",
+      "question": "Which operator is used for pattern matching in SQL?",
+      "options": ["MATCH", "LIKE", "PATTERN", "FIND"],
+      "correct": 1,
+      "difficulty": "medium"
+    },
+    {
+      "id": "q7",
+      "question": "How do you sort results in descending order?",
+      "options": ["ORDER BY column DESC", "SORT BY column DESC", "ORDER column DESC", "ARRANGE BY column DESC"],
+      "correct": 0,
+      "difficulty": "easy"
+    }
+  ],
+  "aggregations": [
+    {
+      "id": "q8",
+      "question": "Which clause is used with aggregate functions to filter groups?",
+      "options": ["WHERE", "HAVING", "FILTER", "GROUP"],
+      "correct": 1,
+      "difficulty": "hard"
+    }
+  ]
+}

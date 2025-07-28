@@ -1,0 +1,9 @@
+{
+  "id": "user-001",
+  "name": "Alex Johnson",
+  "email": "alex.johnson@example.com",
+  "preferredLang": "English",
+  "streak": 7,
+  "hasSkills": false,
+  "createdAt": "2024-01-15T10:30:00Z"
+}

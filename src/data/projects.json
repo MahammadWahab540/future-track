@@ -1,0 +1,13 @@
+[
+  {
+    "id": "proj-001",
+    "skillId": "sql",
+    "title": "E-commerce Sales Analysis",
+    "description": "Comprehensive analysis of online sales data using advanced SQL techniques",
+    "fileURL": null,
+    "approved": false,
+    "submittedAt": null,
+    "reviewedAt": null,
+    "feedback": null
+  }
+]

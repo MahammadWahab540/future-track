@@ -1,0 +1,179 @@
+{
+  "sql": {
+    "skillId": "sql",
+    "title": "SQL Mastery Roadmap",
+    "description": "Complete path to SQL expertise for data analysis",
+    "stages": [
+      {
+        "id": "sql-basics",
+        "title": "SQL Basics",
+        "description": "Learn fundamental SQL syntax and concepts",
+        "order": 1,
+        "completed": true,
+        "lessons": [
+          {
+            "id": "intro-sql",
+            "title": "Introduction to SQL",
+            "type": "video",
+            "duration": "15 min",
+            "completed": true
+          },
+          {
+            "id": "sql-syntax",
+            "title": "SQL Syntax Fundamentals",
+            "type": "article",
+            "duration": "20 min",
+            "completed": true
+          }
+        ]
+      },
+      {
+        "id": "filtering-sorting",
+        "title": "Filtering & Sorting",
+        "description": "Master WHERE clauses and ORDER BY statements",
+        "order": 2,
+        "completed": true,
+        "lessons": [
+          {
+            "id": "where-clause",
+            "title": "WHERE Clause Mastery",
+            "type": "video",
+            "duration": "18 min",
+            "completed": true
+          },
+          {
+            "id": "order-by",
+            "title": "Sorting with ORDER BY",
+            "type": "article",
+            "duration": "12 min",
+            "completed": true
+          }
+        ]
+      },
+      {
+        "id": "aggregations",
+        "title": "Aggregations",
+        "description": "Learn GROUP BY, COUNT, SUM, AVG functions",
+        "order": 3,
+        "completed": true,
+        "lessons": [
+          {
+            "id": "group-by",
+            "title": "GROUP BY Fundamentals",
+            "type": "video",
+            "duration": "22 min",
+            "completed": true
+          },
+          {
+            "id": "aggregate-functions",
+            "title": "Aggregate Functions Deep Dive",
+            "type": "article",
+            "duration": "25 min",
+            "completed": true
+          }
+        ]
+      },
+      {
+        "id": "joins-subqueries",
+        "title": "Joins & Sub-queries",
+        "description": "Master table relationships and complex queries",
+        "order": 4,
+        "completed": false,
+        "lessons": [
+          {
+            "id": "inner-joins",
+            "title": "Inner Joins Explained",
+            "type": "video",
+            "duration": "30 min",
+            "completed": false
+          },
+          {
+            "id": "outer-joins",
+            "title": "Left, Right & Full Outer Joins",
+            "type": "video",
+            "duration": "25 min",
+            "completed": false
+          }
+        ]
+      },
+      {
+        "id": "optimization",
+        "title": "Optimization Basics",
+        "description": "Learn query performance and indexing",
+        "order": 5,
+        "completed": false,
+        "lessons": [
+          {
+            "id": "query-performance",
+            "title": "Query Performance Tuning",
+            "type": "video",
+            "duration": "35 min",
+            "completed": false
+          },
+          {
+            "id": "indexing",
+            "title": "Database Indexing Strategies",
+            "type": "article",
+            "duration": "28 min",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  },
+  "python": {
+    "skillId": "python",
+    "title": "Python for Data Science",
+    "description": "Master Python programming for data analysis and machine learning",
+    "stages": [
+      {
+        "id": "python-basics",
+        "title": "Python Fundamentals",
+        "description": "Learn Python syntax and basic programming concepts",
+        "order": 1,
+        "completed": true,
+        "lessons": [
+          {
+            "id": "python-intro",
+            "title": "Introduction to Python",
+            "type": "video",
+            "duration": "20 min",
+            "completed": true
+          }
+        ]
+      },
+      {
+        "id": "data-structures",
+        "title": "Data Structures",
+        "description": "Master lists, dictionaries, sets, and tuples",
+        "order": 2,
+        "completed": true,
+        "lessons": [
+          {
+            "id": "lists-tuples",
+            "title": "Lists and Tuples",
+            "type": "video",
+            "duration": "25 min",
+            "completed": true
+          }
+        ]
+      },
+      {
+        "id": "pandas-numpy",
+        "title": "Pandas & NumPy",
+        "description": "Data manipulation with pandas and numerical computing with NumPy",
+        "order": 3,
+        "completed": false,
+        "lessons": [
+          {
+            "id": "pandas-basics",
+            "title": "Pandas Fundamentals",
+            "type": "video",
+            "duration": "30 min",
+            "completed": false
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "sql",
+    "name": "SQL",
+    "careerGoal": "Data Analyst",
+    "level": "Beginner",
+    "progress": 60,
+    "completedStages": 3,
+    "totalStages": 5,
+    "estimatedHours": 40,
+    "icon": "database"
+  },
+  {
+    "id": "python",
+    "name": "Python",
+    "careerGoal": "Data Scientist", 
+    "level": "Intermediate",
+    "progress": 30,
+    "completedStages": 2,
+    "totalStages": 6,
+    "estimatedHours": 60,
+    "icon": "code"
+  }
+]

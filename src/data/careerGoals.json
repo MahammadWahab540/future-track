@@ -1,0 +1,38 @@
+[
+  {
+    "id": "data-analyst",
+    "title": "Data Analyst",
+    "description": "Analyze and interpret complex data to help businesses make informed decisions",
+    "skills": ["SQL", "Excel", "Python", "Tableau", "Statistics"]
+  },
+  {
+    "id": "data-scientist", 
+    "title": "Data Scientist",
+    "description": "Build predictive models and extract insights from large datasets",
+    "skills": ["Python", "R", "Machine Learning", "Statistics", "SQL"]
+  },
+  {
+    "id": "web-developer",
+    "title": "Web Developer",
+    "description": "Build and maintain websites and web applications",
+    "skills": ["JavaScript", "HTML/CSS", "React", "Node.js", "MongoDB"]
+  },
+  {
+    "id": "mobile-developer",
+    "title": "Mobile Developer", 
+    "description": "Create mobile applications for iOS and Android platforms",
+    "skills": ["React Native", "Swift", "Kotlin", "Flutter", "Firebase"]
+  },
+  {
+    "id": "ai-engineer",
+    "title": "AI Engineer",
+    "description": "Develop artificial intelligence and machine learning systems",
+    "skills": ["Python", "TensorFlow", "PyTorch", "Machine Learning", "Deep Learning"]
+  },
+  {
+    "id": "cloud-architect",
+    "title": "Cloud Architect",
+    "description": "Design and implement cloud infrastructure solutions",
+    "skills": ["AWS", "Azure", "Docker", "Kubernetes", "DevOps"]
+  }
+]
