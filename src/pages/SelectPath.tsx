@@ -24,7 +24,7 @@ const availableSkills = [
 
 const SelectPathPage = () => {
   const navigate = useNavigate();
-  const { updateProfile, careerGoals } = useApp();
+  const { updateProfile, careerGoals = [] } = useApp();
   const [selectedCareerGoal, setSelectedCareerGoal] = useState('');
   const [selectedSkills, setSelectedSkills] = useState<string[]>([]);
   const [selectedLevel, setSelectedLevel] = useState('');
@@ -137,7 +137,7 @@ const SelectPathPage = () => {
                     <CommandInput placeholder="Search career goals..." />
                     <CommandEmpty>No career goal found.</CommandEmpty>
                     <CommandGroup>
-                      {careerGoals.map((goal) => (
+                      {careerGoals && careerGoals.length > 0 ? careerGoals.map((goal) => (
                         <CommandItem
                           key={goal.id}
                           onSelect={() => {
@@ -155,7 +155,9 @@ const SelectPathPage = () => {
                             <div className="text-sm text-muted-foreground">{goal.description}</div>
                           </div>
                         </CommandItem>
-                      ))}
+                      )) : (
+                        <CommandItem disabled>Loading career goals...</CommandItem>
+                      )}
                     </CommandGroup>
                   </Command>
                 </PopoverContent>
